@@ -5,21 +5,17 @@
  */
 int main(void)
 {
-	unsigned short a = '0';
-	int i;
+	int x;
 
-	for (i = 0; i < 10; i++)
+	for (x = 0; x < 10; i++)
 	{
-	putchar(a);
-	a++;
-	}
-	a = '1';
-	for (i = 0; i < 6; i++)
+	putchar(x + '0')
+	if (x < 9)
 	{
-	putchar('0' + a);
-	a++;
-	}
 	putchar(',');
 	putchar(' ');
+	}
+	}
+	putchar('\n');
 	return (0);
 }
