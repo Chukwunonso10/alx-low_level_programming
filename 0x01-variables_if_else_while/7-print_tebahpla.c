@@ -2,7 +2,8 @@
 /**
  * main - represent Entry point
  * Return: 0 for sucess
- */int main(void)
+ */
+int main(void)
 {
 	char a;
 
