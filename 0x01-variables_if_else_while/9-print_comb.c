@@ -1,6 +1,8 @@
 #include <stdio.h>
+
 /**
  * main - Entry point of the program
+ *
  * Return: 0 for sucess
  */
 int main(void)
@@ -17,5 +19,5 @@ int main(void)
 	}
 	}
 	putchar('\n');
-	Return (0);
+	return (0);
 }
