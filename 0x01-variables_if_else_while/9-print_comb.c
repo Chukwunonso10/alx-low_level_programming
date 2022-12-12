@@ -1,21 +1,21 @@
 #include <stdio.h>
 /**
- * main - represent Entry poin
+ * main - entry point of the program
  * Return: 0 for sucess
  */
 int main(void)
 {
-	int x;
+	int x = 0
 
-	for (x = 0; x < 10; i++)
+	for (x = 0; x < 10; x++)
 	{
-	putchar(x + '0')
+	putchar(x + '0');
 	if (x < 9)
+	}
 	{
-	putchar(',');
 	putchar(' ');
+	putchar(',');
 	}
-	}
-	putchar('\n');
-	return (0);
+	putchar('\n')
+	Return (0);
 }
