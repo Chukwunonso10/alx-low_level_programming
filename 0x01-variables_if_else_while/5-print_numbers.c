@@ -1,14 +1,22 @@
 #include <stdio.h>
+
 /**
- * main - let it be Entry poin
+ * main - Entry point of the programm
+ *
  * Return: 0 for sucess
  */
 int main(void)
 {
-	int a = 0;
+	int a;
 
-	for (; a < 10 ; a++)
+
+	for (a = 0; a <= 100; a++)
+	{
 	printf("%d", a);
 	putchar('\n');
+	}
+
 	return (0);
 }
+
+
