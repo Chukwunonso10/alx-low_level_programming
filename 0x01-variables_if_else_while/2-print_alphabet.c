@@ -1,14 +1,17 @@
 #include <stdio.h>
 /**
- * main - Represent Entry poin to the program
- * Return: 0 to stop the program
+ * main - Entry point into the programe
+ * Return: 0 for sucess
  */
 int main(void)
 {
 	char a;
 
-	for (a = 'a'; a <= 'z' ; a++)
+	for (a = 'a'; a <= 'z'; a++)
+	{
 	putchar(a);
+	}
 	putchar('\n');
 	return (0);
 }
+		
