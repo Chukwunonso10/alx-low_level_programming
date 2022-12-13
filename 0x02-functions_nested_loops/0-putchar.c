@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>
 /**
  * main - Entry point of the program
  * Return: 0 for sucess
