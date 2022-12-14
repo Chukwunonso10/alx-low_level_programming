@@ -29,9 +29,10 @@ void times_table(void)
 	_putchar((d % 10) + '0');
 	if (cone < 9)
 	{
+
 	_putchar(',');
 	_putchar(' ');}
 	}
-	putchar('\n');
+	_+putchar('\n');
 	}
 }
