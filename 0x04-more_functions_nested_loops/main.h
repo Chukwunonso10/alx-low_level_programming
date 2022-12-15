@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *printf - to print to standard output
- *
+ * printf - to print to standard output
+ * _putchar - to print to output
  *
  */
 
