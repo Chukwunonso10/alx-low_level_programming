@@ -1,9 +1,7 @@
 #include <unistd.h>
 /**
- * printf - to print to standard output
  * _putchar - to print to output
  */
-
 
 int _isupper(int c);
 int _isdigit(int c);
