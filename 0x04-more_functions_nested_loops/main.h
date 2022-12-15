@@ -1,8 +1,7 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  * printf - to print to standard output
  * _putchar - to print to output
- *
  */
 
 
