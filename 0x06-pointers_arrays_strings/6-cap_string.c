@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * cap_string - capitalize first letter of words in a string
@@ -9,7 +10,8 @@ char *cap_string(char *str)
 {
 	int i, j;
 	char sep[50] = {' ', '\n', '\t', ',', ';', '.', '!', '?', '"', '(', ')'
-		'{', '}' };
+	'{', '}' };
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; sep[j] != '\0'; j++)
