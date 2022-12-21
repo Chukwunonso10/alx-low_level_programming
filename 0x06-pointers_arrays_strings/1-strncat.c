@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strncat - concatinate the values of two integers.
  * @dest: arg a
@@ -17,6 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 	i++;
 	}
+
 	j = 0;
 
 	while (src[j] != '\0' && j < n)
