@@ -1,5 +1,9 @@
 #include <stdlib.h>
 #include "main.h"
+/* Entry point
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
@@ -9,7 +13,7 @@ int main(void)
 
 	a[2] = 1024;
 	p = &n;
-	/*
+	/**
 	 * write your line of code here...
 	 * Remember:
 	 * - you are not allowed to use a
