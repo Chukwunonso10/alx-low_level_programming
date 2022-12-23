@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  _strncat - concatenate two strings
+ * _strncat - concatenate two strings
  *
  *  using at most n bytes from src
  *
@@ -11,11 +11,10 @@
  *
  *  @n: input value
  *
- *  Return: dest
+ *  Return:dest
  */
 
 char *_strncat(char *dest, char *src, int n)
-
 {
 	int i;
 
