@@ -10,14 +10,13 @@
 int helper(int a, int b)
 {
 	if (b * b > a)
-		return (-1);
+	return (-1);
 
 	else if (b * b == a)
-		return (b);
+	return (b);
 
 	else
-
-		return (helper(a, b + 1));
+	return (helper(a, b + 1));
 
 	return (1);
 }
@@ -33,6 +32,6 @@ int helper(int a, int b)
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
-		return (0);
+	return (0);
 	return (helper(n, 1));
 }
