@@ -3,22 +3,20 @@
 #include <stdio.h>
 
 /**
- * str_concat - function that concatenates two strings.
- * if NULL is passed, treat it as an empty string
- * The function should return NULL on failure
+ * str_concat - concatenates two strings.
+ * @s1: char pointer
+ * @s2: char pointer
  *
- * @s1: This is the output string
- * @s2: This is the input string
- *
- * Return: The returned pointer should point to a newly allocated space in
- * memory which contains the contents of s1, followed by the contents
- * of s2, and null terminated
+ * Return: strTemp
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int a, b;
-	char *s;
+	int counter1, counter2, i, j;
+	char *strTemp;
+
+	counter1 = 0;
+	counter2 = 0;
 
 	if (s1 == NULL)
 	{
@@ -28,25 +26,27 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	for (a = 0; s1[a] != '\0'; a++)
+	while (s1[counter1] != '\0')
 	{
+		counter1++;
 	}
-	or (b = 0; s2[b] != '\0'; b++)
+	while (s2[counter2] != '\0')
 	{
+		counter2++;
 	}
-
-	s = (char *)  malloc(((a + b) + 1) * sizeof(char));
-
-	if (s == NULL)
+	counter2++;
+	strTemp = malloc(sizeof(char) * (counter1 + counter2));
+	if (strTemp == NULL)
+	{
 		return (NULL);
-	for (a = 0; s1[a] != '\0'; a++)
-	{
-		s[a] = s1[a];
 	}
-	for (b = 0; s2[b] != '\0'; b++)
+	for (i = 0; i < counter1; i++)
 	{
-		s[a] = s2[b];
-		a++;
+		strTemp[i] =  s1[i];
 	}
-	return (s);
+	for (j = 0; j < counter2; j++)
+	{
+		strTemp[i + j] = s2[j];
+	}
+	return (strTemp);
 }
