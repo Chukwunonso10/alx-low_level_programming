@@ -26,7 +26,7 @@ char **strtow(char *str)
 	split[j] = (char *) malloc(sizeof(char) * size + 1);
 	if (split[j] != NULL)
 	{
-		while (temp < size)
+	while (temp < size)
 	{
 	split[j][temp] = str[(i - size) +temp];
 	temp++;
@@ -37,10 +37,10 @@ char **strtow(char *str)
 	}
 	else
 	{
-		while (j-- >= 0)
-		free(split[j]);
-		free(split);
-		return (NULL);
+	while (j-- >= 0)
+	free(split[j]);
+	free(split);
+	return (NULL);
 	}
 	}
 	}
@@ -94,7 +94,7 @@ int len(char *str)
 	if (str != NULL)
 	{
 	while (str[len])
-		len++;
+	len++;
 	}
 	return (len);
 }
