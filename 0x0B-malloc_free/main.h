@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,5 +12,9 @@ char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 int _strlen(char *s);
 char *_strncat(char *dest, char *src, int n);
+char **strtow(char *str);
+int num_words(char *str);
+int len(char *str);
 
-#endif
+
+#endif /* MAIN_H */
