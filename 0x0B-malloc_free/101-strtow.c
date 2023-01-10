@@ -54,6 +54,7 @@ char **strtow(char *str)
 /**
  * num_words - counts the number of words in str
  * @str: string to be used
+ *
  * Return: number of words
  */
 
