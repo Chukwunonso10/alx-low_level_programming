@@ -1,1 +1,1 @@
-readme file
+creating Argc and Argv
