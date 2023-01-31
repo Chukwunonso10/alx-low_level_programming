@@ -19,6 +19,7 @@ void free_listp2(listp_t **head)
 			curr = curr->next;
 			free(temp);
 		}
+
 		*head = NULL;
 	}
 }
