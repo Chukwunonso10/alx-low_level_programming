@@ -1,54 +1,37 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
- * _strlen - counts string length
- * @str: string to be used
- *
- * Return: length of the string
- */
-
-int _strlen(char *str)
-{
-	int len = 0;
-
-	while (str[len] != '\0')
-		len++;
-	return (len);
-}
-
-/**
- * append_text_to_file - appends text at the end of a file
- * @filename: name of the file
- *  @text_content: content to be appended
- *
- *  Return: 1 on success, -1 otherwise
+ * create_file - Creates a new file
+ * @filename: Param description
+ * @text_content: Param description
+ * Return: int
  */
 
 int create_file(const char *filename, char *text_content)
 {
-	int file, wrote;
+	int fp, length = 0, fpWrite;
 
-	if (filename == NULL)
+	fp = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+
+	if (fp == -1)
 		return (-1);
-	file = open(filename, O_WRONLY | O_APPEND);
-	if (file == -1)
-		return (-1);
-	if (text_content != NULL)
+
+	if (text_content == NULL)
 	{
-		wrote = write(file, text_content, _strlen(text_content));
-		if (wrote == -1)
-		{
-			close(file);
-			return(-1);
-
-		}
-		close(file);
-		return (1);
+		text_content = "";
 	}
-	else
-		{
-			close(file);
-			return (1);
-		}
+
+	while (text_content[length] != '\0')
+	{
+		length++;
+	}
+
+	fpWrite = write(fp, text_content, length);
+
+	if (fpWrite == -1)
+	{
+		return (-1);
+	}
+	close(fp);
+	return (1);
 }
