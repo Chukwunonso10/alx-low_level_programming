@@ -2,9 +2,11 @@
 
 /**
  * main - Copies content of file to another
+ *
  * @argc: int
  *
  * @argv: double pointer
+ *
  * Return: Copy of file
  */
 
@@ -18,7 +20,7 @@ int main(int argc, char **argv)
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	fd2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
